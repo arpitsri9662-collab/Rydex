@@ -1,0 +1,32 @@
+@'
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js
+rydex/.next/
+rydex/out/
+
+# Build output
+dist/
+build/
+coverage/
+
+# Deployment
+.vercel/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+'@ | Set-Content -LiteralPath ".gitignore" -Encoding utf8
